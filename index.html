@@ -36,13 +36,57 @@
 
     <div class="workspace">
         <div class="miniworkspace box1">
-            <ul class="buttons">
-                <li>Add Background</li>
-                <li>Add Text</li>
-                <li>Add Theme</li>
-                <li>Add Media</li>
-                <li>Add Layer</li>
-            </ul>
+            <div class="container">
+                <div class="title">Let's choose properties for your page</div>
+                <form id="info-form">
+
+                    <div class="form-group">
+                        <label for="bg-color">Add background color</label>
+                        <div>
+                            <select id="bg-color" name="bg-color" class="form-control">
+                                <option value="lightgreen">Lightgreen</option>
+                                <option value="pink">Pink</option>
+                                <option value="lightblue">Lightblue</option>
+                                <option value="wheat">Wheat</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="h1">Add a heading</label>
+                        <input type="text" id="h1" name="h1" value="" class="form-control heading">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="h2">Add a subheading</label>
+                        <input type="text" id="h2" name="h2" value="" class="form-control heading">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="font-color">Add font color</label>
+                        <select id="font-color" name="font-color" class="form-control">
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">Select an image</label>
+                        <select id="image" name="image" class="form-control">
+                            <option value="cat">Cat image</option>
+                            <option value="dog">Dog image</option>
+                            <option value="panda">Panda image</option>
+                            <option value="ocean">Ocean image</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Submit/Publish</button>
+                </form>
+            </div>
         </div>
     
         <div class="miniworkspace box2">Blank Canvas</div>
