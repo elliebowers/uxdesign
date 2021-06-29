@@ -1,16 +1,20 @@
-.dropdown{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
     background:rgb(59, 58, 58);
-    height: 70px;
+    /*height: 70px;*/
     width: 100%;
     /*position: fixed;
     z-index: 3;*/
 }
 
-.menu{
+.container{
     /*padding: 0;
     margin: 0;*/
-    list-style: none;
-    margin: 0;
     /*box-sizing: border-box;*/
     display: flex;
     justify-content: center;
@@ -49,6 +53,46 @@
     transition: 0.4s;
 }
 
+.dropdown {
+    /*float: left;*/
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;  
+    outline: none;
+    color: white;
+    padding: 23px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #686867;
+    transition: 0.4s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(59, 58, 58);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 5px 30.5px;
+    display: block;
+    text-align: center;
+}
+
 .checkbtn {
     color: #fff;
     font-size: 30px;
@@ -58,6 +102,12 @@
     margin-right: 40px;
     display: none;
 }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.4s;
+}
+
 
 #check{
     display: none;
@@ -105,12 +155,13 @@
 h1{
     text-align: center;
     font-size: 70px;
+    margin-top: 30px;
 }
 
 h2{
     text-align: center;
     font-size: 40px;
-    margin-top: -20px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -118,6 +169,7 @@ h2{
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+
 .miniworkspace{
     border: 1px solid black;
     margin: 20px;
@@ -141,15 +193,21 @@ h2{
     cursor: pointer;
 }
 
+.container1{
+    box-sizing: unset;
+}
+
 form{
-    width: 50%;
-    margin-left: 30px;
+    /*width: 50%;*/
+    margin-left: 50px;
+    margin-top: 20px;
+    
 }
 
 .title {
     font-weight: bold;
     font-size: 24px;
-    margin: 20px auto;
+    margin: 20px;
     text-align: center;
 }
 
@@ -161,7 +219,7 @@ label{
 
 .form-control{
     display: block;
-    width: 100%;
+    width: 80%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -177,7 +235,7 @@ label{
 }
 
 .heading{
-    width:300px;
+    width: 80%;
     height: calc(1.5em + .75rem + 2px);
 }
 

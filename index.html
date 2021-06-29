@@ -7,27 +7,40 @@
     <title>Template Maker</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <div class="dropdown">
-        <input type="checkbox" id="check">
+    <div class="wrapper">
+        <!--<input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
-        </label>
-        <ul class="menu">
-            <li class="lists"><a class="response" href="index.html">
-                <span class="text">Home</span>
-            </a></li>
-            <li class="lists"><a class="response" href="index.html">
-                <span class="text">About</span>
-            </a></li>
-            <li class="lists"><a class="response" href="index.html">
-                <span class="text">Explore</span>
-            </a></li>
-            <li class="lists"><a class="response" href="index.html">
-                <span class="text">Contact</span>
-            </a></li>
-        </ul>
+        </label>-->
+
+        <div class="container">
+            <div class="menu">
+                <a class="response" href="">Home</a>
+            </div>
+            
+            <div class="menu">
+                <a class="response" href="">About</a>
+            </div>
+
+            <div class="menu">
+                <a class="response" href="">Explore</a></a>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Contact
+                <i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a class="response" href="#">Facebook</a>
+                  <a class="response" href="#">Instagram</a>
+                  <a class="response" href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
     </div> 
 
 
@@ -36,8 +49,9 @@
 
     <div class="workspace">
         <div class="miniworkspace box1">
-            <div class="container">
-                <div class="title">Let's choose properties for your page</div>
+            <div class="container1">
+                <h3 class="title">Let's choose properties for your page</h3>
+
                 <form id="info-form">
 
                     <div class="form-group">
