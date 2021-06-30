@@ -15,6 +15,9 @@ informationForm.addEventListener('submit', function(event) {
  
     document.getElementById("chosenheading").innerHTML = formProps.heading;
     document.getElementById("chosensubheading").innerHTML = formProps.subheading;
+   
+    
+
     console.log('Form submitted');
     
 })
