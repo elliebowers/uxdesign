@@ -101,6 +101,7 @@ h2{
 }
 .box2{
     padding: 300px 200px;
+
 }
 .box3{
     grid-column-start: 2;
@@ -172,3 +173,10 @@ label{
     color: whitesmoke;
   }
 
+#chosenheading {
+    margin: 500px ;
+
+}
+#chosensubheading{
+    margin: 500px ;
+}
