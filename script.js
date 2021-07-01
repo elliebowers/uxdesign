@@ -14,11 +14,10 @@ informationForm.addEventListener('submit', function(event) {
     console.log(formProps);
     
 
-    document.getElementById("chosensubheading").innerHTML = formProps.subheading;
     let bgColordiv = `<div style = "color:${formProps['bg-color']}">${formProps['bg-color']}</div>`;
     document.getElementById("chosenbgcolor").innerHTML = bgColordiv
     let fontColordiv = `<div style = "color:${formProps['font-color']}">${formProps.heading} </div> 
-    <div style = "color:${formProps['font-color']}">${formProps.heading}  `
+    <div style = "color:${formProps['font-color']}">${formProps.subheading}  `
 
     document.getElementById("chosenfont").innerHTML = fontColordiv
     console.log(fontColordiv)
