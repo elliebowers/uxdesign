@@ -13,6 +13,8 @@ informationForm.addEventListener('submit', function(event) {
     const formProps = Object.fromEntries(formData);
     console.log(formProps);
     
+    let chosenbgcolor = 'bg-color'
+    let chosenfont = 'font-color'
 
     let bgColordiv = `<div style = "color:${formProps['bg-color']}">${formProps['bg-color']}</div>`;
     document.getElementById("chosenbgcolor").innerHTML = bgColordiv
