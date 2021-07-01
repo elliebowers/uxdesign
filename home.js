@@ -6,7 +6,7 @@ for (i = 0; i < panels.length; i++) {
   paneltops.push(panels[i].offsetTop);
 }
 
-let colors = ["white", "color-one", "color-two", "color-three", "color-four", "color-five"];
+let colors = [/*"white"*/, "color-one", "color-two", "color-three", "color-four", "color-five"];
 
 function showColorChange(){
     // loop through the panels and add a new colour as the panels change
