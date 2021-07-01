@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Maker</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="menu">
+                <a class="response" href="index.html">Home</a>
+            </div>
+            
+            <div class="menu">
+                <a class="response" href="">About</a>
+            </div>
+
+            <!--<div class="menu">
+                <a class="response" href="">Explore</a></a>
+            </div>-->
+
+            <div class="dropdown">
+                <button class="dropbtn">Explore
+                <i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a class="response" href="http://book.mixu.net/css/">Resource 1</a>
+                  <a class="response" href="http://book.mixu.net/css/">Resource 2</a>
+                  <a class="response" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade">Resource 3</a>
+                </div>
+            </div>
+
+            <!--<div class="dropdown">
+                <button class="dropbtn">Contact
+                <i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a class="response" href="#">Facebook</a>
+                  <a class="response" href="#">Instagram</a>
+                  <a class="response" href="#">Twitter</a>
+                </div>
+            </div>-->
+        </div>
+    </div> 
+
+
+    <h1>Website Template Generator</h1>
+    <h2>Go ahead and create your own website!</h2>
+
+    <div class="workspace">
+        <div class="miniworkspace box1">
+            <div class="container1">
+                <h3 class="title">Let's choose properties for your page</h3>
+
+                <form id="info-form">
+
+                    <div class="form-group">
+                        <label for="bg-color">Add background color</label>
+                     
+                            <select id="bg-color" name="bg-color" class="form-control">
+                                <option value="lightgreen">Lightgreen</option>
+                                <option value="pink">Pink</option>
+                                <option value="lightblue">Lightblue</option>
+                                <option value="wheat">Wheat</option>
+                            </select>
+               
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="heading">Add a heading</label>
+                        <input type="text" id="heading" name="heading" value="" class="form-control heading">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subheading">Add a subheading</label>
+                        <input type="text" id="subheading" name="subheading" value="" class="form-control heading">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="font-color">Add font color</label>
+                        <select id="font-color" name="font-color" class="form-control">
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">Select an image</label>
+                        <select id="image" name="image" class="form-control">
+                            <option value="cat">Cat image</option>
+                            <option value="dog">Dog image</option>
+                            <option value="panda">Panda image</option>
+                            <option value="ocean">Ocean image</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Submit/Publish</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="miniworkspace box2">
+            <style>
+                .box2 {
+                    background-color:"chosenbgcolor";
+                    color:"chosenfont";
+                }
+            </style>
+            <div><span class = "chosenfont" id = "chosenfont"></span></div> 
+            <div><span  class = "chosenheading"id = "chosenheading"></span></div>
+            <div><span class = "chosensubheading" id = "chosensubheading"></span></div>
+        
+            <div><span class = "chosenimage" id = "chosenimage"></span></div>
+        
+            <div><span class = "chosenbgcolor" id = "chosenbgcolor"></span></div>
+        
+        </div>
+        <div class="miniworkspace box3">
+            <textarea id = "code" rows = "20" cols = "100"></textarea>
+            Display code here</div>
+        
+    </span></div>
+
+</div>
+    
+<div class="miniworkspace box2">
+    <style>
+        .box2 {
+            background-color:'#chosenbgcolor';
+            color:'#chosenfont';
+        }
+    </style>
+    <div><span class = "chosenfont" id = "chosenfont"></span></div> 
+    <div><span  class = "chosenheading"id = "chosenheading"></span></div>
+    <div><span class = "chosensubheading" id = "chosensubheading"></span></div>
+
+    <div><span class = "chosenimage" id = "chosenimage"></span></div>
+
+    <div><span class = "chosenbgcolor" id = "chosenbgcolor"></span></div>
+
+</div>
+<div class="miniworkspace box3">
+    <textarea id = "code" rows = "20" cols = "100"></textarea>
+    Display code here</div>
+
+</span></div>
+    <script src="script.js"></script>
+</body>
+</html>
