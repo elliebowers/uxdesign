@@ -16,11 +16,12 @@ informationForm.addEventListener('submit', function(event) {
 
     let bgColordiv = `<div style = "color:${formProps['bg-color']}">${formProps['bg-color']}</div>`;
     document.getElementById("chosenbgcolor").innerHTML = bgColordiv
+
     let fontColordiv = `<div style = "color:${formProps['font-color']}">${formProps.heading} </div> 
     <div style = "color:${formProps['font-color']}">${formProps.subheading}  `
-
     document.getElementById("chosenfont").innerHTML = fontColordiv
     console.log(fontColordiv)
+    
     document.getElementById("code").value = `<div class="miniworkspace box2">
     <div> <span  class = "chosenheading"id = "chosenheading"></span> </div>
     <div><span class = "chosensubheading" id = "chosensubheading"></span></div>
@@ -28,7 +29,7 @@ informationForm.addEventListener('submit', function(event) {
     <style>
         .root {
             --bgColor:"${formProps["bg-color"]}; 
-            --fontColor:${["font-color"]};
+            --fontColor:${formProps["font-color"]};
         }
         .miniworkspace {
             background-color: var(--bgColor);
