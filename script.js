@@ -15,8 +15,8 @@ informationForm.addEventListener('submit', function(event) {
  
     document.getElementById("chosenheading").innerHTML = formProps.heading;
     document.getElementById("chosensubheading").innerHTML = formProps.subheading;
-    document.getElementById("bg-color").innerHTML = formProps.bg-color;
-    document.getElementById("font-color").innerHTML = formProps.font-color;
+    document.getElementById("box2").style.backgroundColor = "bg-color";
+    document.getElementById("box2").style.backgroundColor = "font-color";
     
 
     console.log('Form submitted');
