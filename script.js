@@ -39,6 +39,22 @@ informationForm.addEventListener('submit', function(event) {
             color: var(--fontColor);
         }
     </style>
+    document.getElementById("code").value = `
+<style>
+    .root {
+        background-color: ${formProps["bg-color"]};
+        color: ${formProps["font-color"]};
+    }
+</style>
+    <div class="miniworkspace box2">
+      
+            <div> <h1> <span id = "chosenheading"></span> </h1> </div>
+            <div> <p> <span id = "chosenparagraph1"></span> </p> </div>
+            <div> <h2> <span id = "chosensubheading"></span></div> </h2>
+          
+        
+        </div>
+  
     
     
 
