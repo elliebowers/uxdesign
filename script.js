@@ -13,32 +13,33 @@ informationForm.addEventListener('submit', function(event) {
     const formProps = Object.fromEntries(formData);
     console.log(formProps);
     
-    let chosenbgcolor  = 'bg-color';
-    let chosenfont = 'font-color';
 
-    let bgColordiv = `<div style = "color:${formProps['bg-color']}">${formProps['bg-color']}</div>`;
-    document.getElementById("chosenbgcolor").innerHTML = bgColordiv
-    console.log(bgColordiv)
+    let bgcolor=document.getElementById('bg-color').value;
+    document.querySelector('.box2').style.backgroundColor = bgcolor;
 
-    let fontColordiv = `<div style = "color:${formProps['font-color']}">${formProps.heading} </div> 
-    <div style = "color:${formProps['font-color']}">${formProps.subheading}  `
-    document.getElementById("chosenfont").innerHTML = fontColordiv
-    console.log(fontColordiv)
+    let fontcolor=document.getElementById('font-color').value;
+    document.querySelector('.box2').style.color = fontcolor;
+
+    document.getElementById('chosenheading').innerHTML = formProps.heading
+    document.getElementById('chosenparagraph1').innerHTML = formProps.para1
+    document.getElementById('chosensubheading').innerHTML = formProps.subheading
     
     document.getElementById("code").value = `<div class="miniworkspace box2">
-    <div> <span  class = "chosenheading"id = "chosenheading"></span> </div>
-    <div><span class = "chosensubheading" id = "chosensubheading"></span></div>
-    Blank Canvas 
-    <style>
-        .root {
-            --bgColor:"${formProps["bg-color"]}; 
-            --fontColor:${formProps["font-color"]};
-        }
-        .miniworkspace {
-            background-color: var(--bgColor);
-            color: var(--fontColor);
-        }
-    </style>
+<style>
+    .root {
+        background-color: ${formProps["bg-color"]};
+        color: ${formProps["font-color"]};
+    }
+</style>
+    <div class="miniworkspace box2">
+      
+            <div> <h1> <span id = "chosenheading"></span> </h1> </div>
+            <div> <p> <span id = "chosenparagraph1"></span> </p> </div>
+            <div> <h2> <span id = "chosensubheading"></span></div> </h2>
+          
+        
+        </div>
+  
     
     
 

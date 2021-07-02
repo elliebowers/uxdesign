@@ -18,7 +18,7 @@
             </div>
             
             <div class="menu">
-                <a class="response" href="">About</a>
+                <a class="response" href="about.html">About</a>
             </div>
 
             <!--<div class="menu">
@@ -60,22 +60,25 @@
 
                 <form id="info-form">
 
-                    <div class="form-group">
-                        <label for="bg-color">Add background color</label>
-                     
-                            <select id="bg-color" name="bg-color" class="form-control">
-                                <option value="lightgreen">Lightgreen</option>
-                                <option value="pink">Pink</option>
-                                <option value="lightblue">Lightblue</option>
-                                <option value="wheat">Wheat</option>
-                            </select>
-               
+                    <div>
+                        <label for="bg-color">Choose background color</label>
+                        <select id="bg-color" name="bg-color" class="form-control">
+                            <option value="lightgreen">Lightgreen</option>
+                            <option value="pink">Pink</option>
+                            <option value="lightblue">Lightblue</option>
+                            <option value="wheat">Wheat</option>
+                        </select>                                  
                     </div>
 
 
                     <div class="form-group">
                         <label for="heading">Add a heading</label>
                         <input type="text" id="heading" name="heading" value="" class="form-control heading">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paragraph1">Add a paragraph</label>
+                        <input type="text" id="para1" name="para1" value="" class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -94,35 +97,17 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="image">Select an image</label>
-                        <select id="image" name="image" class="form-control">
-                            <option value="cat">Cat image</option>
-                            <option value="dog">Dog image</option>
-                            <option value="panda">Panda image</option>
-                            <option value="ocean">Ocean image</option>
-                        </select>
-                    </div>
-
                     <button type="submit" class="btn btn-secondary">Submit/Publish</button>
                 </form>
             </div>
         </div>
 
         <div class="miniworkspace box2">
-            <style>
-                .box2 {
-                    background-color:"chosenbgcolor";
-                    color:"chosenfont";
-                }
-            </style>
-            <div><span id = "chosenfont"></span></div> 
-            <div><span id = "chosenheading"></span></div>
-            <div><span id = "chosensubheading"></span></div>
-        
-            <div><span id = "chosenimage"></span></div>
-        
-            <div><span id = "chosenbgcolor"></span></div>
+      
+            <div> <h1> <span id = "chosenheading"></span> </h1> </div>
+            <div> <p> <span id = "chosenparagraph1"></span> </p> </div>
+            <div> <h2> <span id = "chosensubheading"></span></div> </h2>
+          
         
         </div>
         <div class="miniworkspace box3">
