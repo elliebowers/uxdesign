@@ -13,20 +13,19 @@ informationForm.addEventListener('submit', function(event) {
     const formProps = Object.fromEntries(formData);
     console.log(formProps);
     
-    let chosenbgcolor  = 'bg-color';
-    let chosenfont = 'font-color';
+    let bgcolor=document.getElementById('bg-color').value;
+    document.querySelector('.box2').style.backgroundColor = bgcolor;
 
-    let bgColordiv = `<div style = "color:${formProps['bg-color']}">${formProps['bg-color']}</div>`;
-    document.getElementById("chosenbgcolor").innerHTML = bgColordiv
-    console.log(bgColordiv)
+    let fontcolor=document.getElementById('font-color').value;
+    document.querySelector('.box2').style.color = fontcolor;
 
-    let fontColordiv = `<div style = "color:${formProps['font-color']}">${formProps.heading} </div> 
-    <div style = "color:${formProps['font-color']}">${formProps.subheading}  `
-    document.getElementById("chosenfont").innerHTML = fontColordiv
-    console.log(fontColordiv)
+    document.getElementById('chosenheading').innerHTML = formProps.heading
+    document.getElementById('chosenparagraph1').innerHTML = formProps.para1
+    document.getElementById('chosensubheading').innerHTML = formProps.subheading
+  
     
     document.getElementById("code").value = `<div class="miniworkspace box2">
-    <div> <span  class = "chosenheading"id = "chosenheading"></span> </div>
+    <div> <span class = "chosenheading"id = "chosenheading"></span> </div>
     <div><span class = "chosensubheading" id = "chosensubheading"></span></div>
     Blank Canvas 
     <style>
@@ -45,6 +44,6 @@ informationForm.addEventListener('submit', function(event) {
     </div>`;
 
     console.log('Form submitted');
+   
     
 })
-
