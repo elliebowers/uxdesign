@@ -25,20 +25,6 @@ informationForm.addEventListener('submit', function(event) {
     document.getElementById("chosenfont").innerHTML = fontColordiv
     console.log(fontColordiv)
     
-    document.getElementById("code").value = `<div class="miniworkspace box2">
-    <div> <span  class = "chosenheading"id = "chosenheading"></span> </div>
-    <div><span class = "chosensubheading" id = "chosensubheading"></span></div>
-    Blank Canvas 
-    <style>
-        .root {
-            --bgColor:"${formProps["bg-color"]}; 
-            --fontColor:${formProps["font-color"]};
-        }
-        .miniworkspace {
-            background-color: var(--bgColor);
-            color: var(--fontColor);
-        }
-    </style>
     document.getElementById("code").value = `
 <style>
     .root {
